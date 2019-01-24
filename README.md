@@ -7,7 +7,15 @@ microcontroller : https://os.mbed.com/platforms/ST-Nucleo-F303K8/
 
 specification
 
+Polyphony:128
+
 Note Number : 0~128
+
+Pitch Bend:Unimplemented
+
+Channel:Unimplemented
+
+Velocity:Unimplemented
 
 Output Pulse Whidth : about 20uS inverted
 
