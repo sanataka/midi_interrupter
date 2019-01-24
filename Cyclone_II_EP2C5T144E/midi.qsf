@@ -62,4 +62,5 @@ set_location_assignment PIN_134 -to bit5
 set_location_assignment PIN_136 -to bit6
 set_location_assignment PIN_137 -to enb
 set_location_assignment PIN_141 -to wri
+set_location_assignment PIN_133 -to LED
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

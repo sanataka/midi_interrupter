@@ -1,5 +1,5 @@
 Flow report for midi
-Wed Jan 23 22:43:29 2019
+Thu Jan 24 21:58:09 2019
 Quartus II 64-Bit Version 12.1 Build 177 11/07/2012 SJ Web Edition
 
 
@@ -38,18 +38,18 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +------------------------------------+------------------------------------------+
-; Flow Status                        ; Successful - Wed Jan 23 22:43:25 2019    ;
+; Flow Status                        ; Successful - Thu Jan 24 21:58:06 2019    ;
 ; Quartus II 64-Bit Version          ; 12.1 Build 177 11/07/2012 SJ Web Edition ;
 ; Revision Name                      ; midi                                     ;
 ; Top-level Entity Name              ; midi                                     ;
 ; Family                             ; Cyclone II                               ;
 ; Device                             ; EP2C5T144C8                              ;
 ; Timing Models                      ; Final                                    ;
-; Total logic elements               ; 3,846 / 4,608 ( 83 % )                   ;
-;     Total combinational functions  ; 3,841 / 4,608 ( 83 % )                   ;
-;     Dedicated logic registers      ; 2,083 / 4,608 ( 45 % )                   ;
-; Total registers                    ; 2083                                     ;
-; Total pins                         ; 11 / 89 ( 12 % )                         ;
+; Total logic elements               ; 3,930 / 4,608 ( 85 % )                   ;
+;     Total combinational functions  ; 3,918 / 4,608 ( 85 % )                   ;
+;     Dedicated logic registers      ; 2,090 / 4,608 ( 45 % )                   ;
+; Total registers                    ; 2090                                     ;
+; Total pins                         ; 12 / 89 ( 13 % )                         ;
 ; Total virtual pins                 ; 0                                        ;
 ; Total memory bits                  ; 0 / 119,808 ( 0 % )                      ;
 ; Embedded Multiplier 9-bit elements ; 0 / 26 ( 0 % )                           ;
@@ -62,7 +62,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 01/23/2019 22:42:54 ;
+; Start date & time ; 01/24/2019 21:57:43 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; midi                ;
 +-------------------+---------------------+
@@ -73,7 +73,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                           ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+---------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 154027282112136.154825097315880 ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 154027282112136.154833466204216 ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                              ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                               ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; 16764057                        ; --            ; --          ; Top        ;
@@ -88,11 +88,11 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:07     ; 1.0                     ; 4631 MB             ; 00:00:07                           ;
-; Fitter                    ; 00:00:17     ; 1.0                     ; 4855 MB             ; 00:00:21                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 4585 MB             ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:02     ; 1.7                     ; 4665 MB             ; 00:00:02                           ;
-; Total                     ; 00:00:27     ; --                      ; --                  ; 00:00:31                           ;
+; Analysis & Synthesis      ; 00:00:07     ; 1.0                     ; 4633 MB             ; 00:00:07                           ;
+; Fitter                    ; 00:00:12     ; 2.7                     ; 4853 MB             ; 00:00:20                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 4600 MB             ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 4656 MB             ; 00:00:02                           ;
+; Total                     ; 00:00:22     ; --                      ; --                  ; 00:00:30                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

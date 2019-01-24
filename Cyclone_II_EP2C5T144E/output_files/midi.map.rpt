@@ -1,5 +1,5 @@
 Analysis & Synthesis report for midi
-Wed Jan 23 22:43:01 2019
+Thu Jan 24 21:57:50 2019
 Quartus II 64-Bit Version 12.1 Build 177 11/07/2012 SJ Web Edition
 
 
@@ -42,16 +42,16 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +------------------------------------+------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Jan 23 22:43:01 2019    ;
+; Analysis & Synthesis Status        ; Successful - Thu Jan 24 21:57:50 2019    ;
 ; Quartus II 64-Bit Version          ; 12.1 Build 177 11/07/2012 SJ Web Edition ;
 ; Revision Name                      ; midi                                     ;
 ; Top-level Entity Name              ; midi                                     ;
 ; Family                             ; Cyclone II                               ;
-; Total logic elements               ; 3,841                                    ;
-;     Total combinational functions  ; 3,841                                    ;
-;     Dedicated logic registers      ; 2,083                                    ;
-; Total registers                    ; 2083                                     ;
-; Total pins                         ; 11                                       ;
+; Total logic elements               ; 3,918                                    ;
+;     Total combinational functions  ; 3,918                                    ;
+;     Dedicated logic registers      ; 2,090                                    ;
+; Total registers                    ; 2090                                     ;
+; Total pins                         ; 12                                       ;
 ; Total virtual pins                 ; 0                                        ;
 ; Total memory bits                  ; 0                                        ;
 ; Embedded Multiplier 9-bit elements ; 0                                        ;
@@ -161,13 +161,13 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                       ;
-+----------------------------------+-----------------+------------------------+----------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                         ; Library ;
-+----------------------------------+-----------------+------------------------+----------------------------------------------------------------------+---------+
-; midi.v                           ; yes             ; User Verilog HDL File  ; C:/Users/t2kyo/Desktop/midi_interrupter/Cyclone_II_EP2C5T144E/midi.v ;         ;
-+----------------------------------+-----------------+------------------------+----------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                     ;
++----------------------------------+-----------------+------------------------+------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path       ; Library ;
++----------------------------------+-----------------+------------------------+------------------------------------+---------+
+; midi.v                           ; yes             ; User Verilog HDL File  ; C:/Users/t2kyo/Desktop/midi/midi.v ;         ;
++----------------------------------+-----------------+------------------------+------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -175,27 +175,27 @@ applicable agreement for further details.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 3,841 ;
+; Estimated Total logic elements              ; 3,918 ;
 ;                                             ;       ;
-; Total combinational functions               ; 3841  ;
+; Total combinational functions               ; 3918  ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 1218  ;
-;     -- 3 input functions                    ; 159   ;
-;     -- <=2 input functions                  ; 2464  ;
+;     -- 4 input functions                    ; 1292  ;
+;     -- 3 input functions                    ; 161   ;
+;     -- <=2 input functions                  ; 2465  ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 1975  ;
+;     -- normal mode                          ; 2052  ;
 ;     -- arithmetic mode                      ; 1866  ;
 ;                                             ;       ;
-; Total registers                             ; 2083  ;
-;     -- Dedicated logic registers            ; 2083  ;
+; Total registers                             ; 2090  ;
+;     -- Dedicated logic registers            ; 2090  ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
-; I/O pins                                    ; 11    ;
+; I/O pins                                    ; 12    ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
-; Maximum fan-out                             ; 1947  ;
-; Total fan-out                               ; 14315 ;
-; Average fan-out                             ; 2.41  ;
+; Maximum fan-out                             ; 1954  ;
+; Total fan-out                               ; 14634 ;
+; Average fan-out                             ; 2.43  ;
 +---------------------------------------------+-------+
 
 
@@ -204,119 +204,112 @@ applicable agreement for further details.
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |midi                      ; 3841 (3841)       ; 2083 (2083)  ; 0           ; 0            ; 0       ; 0         ; 11   ; 0            ; |midi               ;              ;
+; |midi                      ; 3918 (3918)       ; 2090 (2090)  ; 0           ; 0            ; 0       ; 0         ; 12   ; 0            ; |midi               ;              ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+------------------------------------------------------------------+
-; Registers Removed During Synthesis                               ;
-+-----------------------------------------+------------------------+
-; Register name                           ; Reason for Removal     ;
-+-----------------------------------------+------------------------+
-; i_cnt118[0]                             ; Merged with i_cnt1[0]  ;
-; i_cnt87[0]                              ; Merged with i_cnt1[0]  ;
-; i_cnt62[0]                              ; Merged with i_cnt1[0]  ;
-; i_cnt70[0]                              ; Merged with i_cnt1[0]  ;
-; i_cnt39[0]                              ; Merged with i_cnt1[0]  ;
-; i_cnt22[0]                              ; Merged with i_cnt1[0]  ;
-; i_cnt32[0]                              ; Merged with i_cnt1[0]  ;
-; i_cnt109[0]                             ; Merged with i_cnt1[0]  ;
-; i_cnt56[0]                              ; Merged with i_cnt1[0]  ;
-; i_cnt64[0]                              ; Merged with i_cnt1[0]  ;
-; i_cnt119[0]                             ; Merged with i_cnt1[0]  ;
-; i_cnt79[0]                              ; Merged with i_cnt1[0]  ;
-; i_cnt74[0]                              ; Merged with i_cnt1[0]  ;
-; i_cnt105[0]                             ; Merged with i_cnt1[0]  ;
-; i_cnt107[0]                             ; Merged with i_cnt1[0]  ;
-; i_cnt12[0]                              ; Merged with i_cnt1[0]  ;
-; i_cnt65[0]                              ; Merged with i_cnt1[0]  ;
-; i_cnt82[0]                              ; Merged with i_cnt1[0]  ;
-; i_cnt41[0]                              ; Merged with i_cnt1[0]  ;
-; i_cnt89[0]                              ; Merged with i_cnt1[0]  ;
-; i_cnt53[0]                              ; Merged with i_cnt1[0]  ;
-; i_cnt71[0]                              ; Merged with i_cnt1[0]  ;
-; i_cnt122[0]                             ; Merged with i_cnt1[0]  ;
-; i_cnt17[0]                              ; Merged with i_cnt1[0]  ;
-; i_cnt27[0]                              ; Merged with i_cnt1[0]  ;
-; i_cnt63[0]                              ; Merged with i_cnt1[0]  ;
-; i_cnt20[0]                              ; Merged with i_cnt1[0]  ;
-; i_cnt18[0]                              ; Merged with i_cnt1[0]  ;
-; i_cnt40[0]                              ; Merged with i_cnt1[0]  ;
-; i_cnt57[0]                              ; Merged with i_cnt1[0]  ;
-; i_cnt121[0]                             ; Merged with i_cnt1[0]  ;
-; i_cnt43[0]                              ; Merged with i_cnt1[0]  ;
-; i_cnt75[0]                              ; Merged with i_cnt1[0]  ;
-; i_cnt21[0]                              ; Merged with i_cnt1[0]  ;
-; i_cnt95[0]                              ; Merged with i_cnt1[0]  ;
-; i_cnt124[0]                             ; Merged with i_cnt1[0]  ;
-; i_cnt110[0]                             ; Merged with i_cnt1[0]  ;
-; i_cnt7[0]                               ; Merged with i_cnt1[0]  ;
-; i_cnt48[0]                              ; Merged with i_cnt1[0]  ;
-; i_cnt52[0]                              ; Merged with i_cnt1[0]  ;
-; i_cnt9[0]                               ; Merged with i_cnt1[0]  ;
-; i_cnt69[0]                              ; Merged with i_cnt1[0]  ;
-; i_cnt13[0]                              ; Merged with i_cnt1[0]  ;
-; i_cnt66[0]                              ; Merged with i_cnt1[0]  ;
-; i_cnt49[0]                              ; Merged with i_cnt1[0]  ;
-; i_cnt84[0]                              ; Merged with i_cnt1[0]  ;
-; i_cnt73[0]                              ; Merged with i_cnt1[0]  ;
-; i_cnt98[0]                              ; Merged with i_cnt1[0]  ;
-; i_cnt126[0]                             ; Merged with i_cnt1[0]  ;
-; i_cnt15[0]                              ; Merged with i_cnt1[0]  ;
-; i_cnt19[0]                              ; Merged with i_cnt1[0]  ;
-; i_cnt81[0]                              ; Merged with i_cnt1[0]  ;
-; i_cnt80[0]                              ; Merged with i_cnt1[0]  ;
-; i_cnt54[0]                              ; Merged with i_cnt1[0]  ;
-; i_cnt76[0]                              ; Merged with i_cnt1[0]  ;
-; i_cnt23[0]                              ; Merged with i_cnt1[0]  ;
-; i_cnt14[0]                              ; Merged with i_cnt1[0]  ;
-; i_cnt11[0]                              ; Merged with i_cnt1[0]  ;
-; i_cnt10[0]                              ; Merged with i_cnt1[0]  ;
-; i_cnt90[0]                              ; Merged with i_cnt1[0]  ;
-; i_cnt94[0]                              ; Merged with i_cnt1[0]  ;
-; i_cnt76[1]                              ; Merged with i_cnt7[1]  ;
-; i_cnt19[1]                              ; Merged with i_cnt7[1]  ;
-; i_cnt79[1]                              ; Merged with i_cnt7[1]  ;
-; i_cnt84[1]                              ; Merged with i_cnt7[1]  ;
-; i_cnt94[1]                              ; Merged with i_cnt11[1] ;
-; i_cnt64[1]                              ; Merged with i_cnt11[1] ;
-; i_cnt107[1]                             ; Merged with i_cnt11[1] ;
-; i_cnt121[1]                             ; Merged with i_cnt11[1] ;
-; i_cnt23[1]                              ; Merged with i_cnt12[1] ;
-; i_cnt39[1]                              ; Merged with i_cnt12[1] ;
-; i_cnt27[1]                              ; Merged with i_cnt12[1] ;
-; i_cnt17[1]                              ; Merged with i_cnt12[1] ;
-; i_cnt40[1]                              ; Merged with i_cnt12[1] ;
-; i_cnt49[1]                              ; Merged with i_cnt12[1] ;
-; i_cnt56[1]                              ; Merged with i_cnt12[1] ;
-; i_cnt69[1]                              ; Merged with i_cnt41[1] ;
-; i_cnt110[1]                             ; Merged with i_cnt63[1] ;
-; i_cnt124[1]                             ; Merged with i_cnt63[1] ;
-; i_cnt81[1]                              ; Merged with i_cnt63[1] ;
-; i_cnt82[1]                              ; Merged with i_cnt63[1] ;
-; i_cnt118[1]                             ; Merged with i_cnt89[1] ;
-; i_cnt84[2]                              ; Merged with i_cnt76[2] ;
-; i_cnt90[1]                              ; Merged with i_cnt89[1] ;
-; i_cnt76[2]                              ; Merged with i_cnt7[2]  ;
-; i_cnt64[2]                              ; Merged with i_cnt11[2] ;
-; i_cnt27[2]                              ; Merged with i_cnt12[2] ;
-; i_cnt90[2]                              ; Merged with i_cnt89[2] ;
-; i_cnt41[1]                              ; Merged with i_cnt7[1]  ;
-; i_cnt79[2]                              ; Merged with i_cnt7[2]  ;
-; i_cnt89[1]                              ; Merged with i_cnt11[1] ;
-; i_cnt121[2]                             ; Merged with i_cnt11[2] ;
-; i_cnt63[1]                              ; Merged with i_cnt12[1] ;
-; i_cnt23[2]                              ; Merged with i_cnt12[2] ;
-; i_cnt84[3]                              ; Merged with i_cnt79[3] ;
-; i_cnt12[1]                              ; Merged with i_cnt11[1] ;
-; i_cnt82[2]                              ; Merged with i_cnt12[2] ;
-; i_cnt64[3]                              ; Merged with i_cnt11[3] ;
-; i_cnt79[3]                              ; Merged with i_cnt76[3] ;
-; i_cnt64[4]                              ; Merged with i_cnt11[4] ;
-; i_cnt69[2]                              ; Merged with i_cnt7[2]  ;
-; Total Number of Removed Registers = 101 ;                        ;
-+-----------------------------------------+------------------------+
++-----------------------------------------------------------------+
+; Registers Removed During Synthesis                              ;
++----------------------------------------+------------------------+
+; Register name                          ; Reason for Removal     ;
++----------------------------------------+------------------------+
+; i_cnt118[0]                            ; Merged with i_cnt1[0]  ;
+; i_cnt10[0]                             ; Merged with i_cnt1[0]  ;
+; i_cnt40[0]                             ; Merged with i_cnt1[0]  ;
+; i_cnt48[0]                             ; Merged with i_cnt1[0]  ;
+; i_cnt90[0]                             ; Merged with i_cnt1[0]  ;
+; i_cnt126[0]                            ; Merged with i_cnt1[0]  ;
+; i_cnt32[0]                             ; Merged with i_cnt1[0]  ;
+; i_cnt66[0]                             ; Merged with i_cnt1[0]  ;
+; i_cnt41[0]                             ; Merged with i_cnt1[0]  ;
+; i_cnt64[0]                             ; Merged with i_cnt1[0]  ;
+; i_cnt69[0]                             ; Merged with i_cnt1[0]  ;
+; i_cnt11[0]                             ; Merged with i_cnt1[0]  ;
+; i_cnt15[0]                             ; Merged with i_cnt1[0]  ;
+; i_cnt53[0]                             ; Merged with i_cnt1[0]  ;
+; i_cnt43[0]                             ; Merged with i_cnt1[0]  ;
+; i_cnt21[0]                             ; Merged with i_cnt1[0]  ;
+; i_cnt105[0]                            ; Merged with i_cnt1[0]  ;
+; i_cnt39[0]                             ; Merged with i_cnt1[0]  ;
+; i_cnt110[0]                            ; Merged with i_cnt1[0]  ;
+; i_cnt27[0]                             ; Merged with i_cnt1[0]  ;
+; i_cnt109[0]                            ; Merged with i_cnt1[0]  ;
+; i_cnt56[0]                             ; Merged with i_cnt1[0]  ;
+; i_cnt14[0]                             ; Merged with i_cnt1[0]  ;
+; i_cnt17[0]                             ; Merged with i_cnt1[0]  ;
+; i_cnt75[0]                             ; Merged with i_cnt1[0]  ;
+; i_cnt22[0]                             ; Merged with i_cnt1[0]  ;
+; i_cnt52[0]                             ; Merged with i_cnt1[0]  ;
+; i_cnt107[0]                            ; Merged with i_cnt1[0]  ;
+; i_cnt62[0]                             ; Merged with i_cnt1[0]  ;
+; i_cnt57[0]                             ; Merged with i_cnt1[0]  ;
+; i_cnt84[0]                             ; Merged with i_cnt1[0]  ;
+; i_cnt95[0]                             ; Merged with i_cnt1[0]  ;
+; i_cnt98[0]                             ; Merged with i_cnt1[0]  ;
+; i_cnt54[0]                             ; Merged with i_cnt1[0]  ;
+; i_cnt79[0]                             ; Merged with i_cnt1[0]  ;
+; i_cnt70[0]                             ; Merged with i_cnt1[0]  ;
+; i_cnt65[0]                             ; Merged with i_cnt1[0]  ;
+; i_cnt13[0]                             ; Merged with i_cnt1[0]  ;
+; i_cnt80[0]                             ; Merged with i_cnt1[0]  ;
+; i_cnt119[0]                            ; Merged with i_cnt1[0]  ;
+; i_cnt124[0]                            ; Merged with i_cnt1[0]  ;
+; i_cnt9[0]                              ; Merged with i_cnt1[0]  ;
+; i_cnt7[0]                              ; Merged with i_cnt1[0]  ;
+; i_cnt18[0]                             ; Merged with i_cnt1[0]  ;
+; i_cnt49[0]                             ; Merged with i_cnt1[0]  ;
+; i_cnt87[0]                             ; Merged with i_cnt1[0]  ;
+; i_cnt121[0]                            ; Merged with i_cnt1[0]  ;
+; i_cnt73[0]                             ; Merged with i_cnt1[0]  ;
+; i_cnt71[0]                             ; Merged with i_cnt1[0]  ;
+; i_cnt20[0]                             ; Merged with i_cnt1[0]  ;
+; i_cnt76[0]                             ; Merged with i_cnt1[0]  ;
+; i_cnt81[0]                             ; Merged with i_cnt1[0]  ;
+; i_cnt19[0]                             ; Merged with i_cnt1[0]  ;
+; i_cnt63[0]                             ; Merged with i_cnt1[0]  ;
+; i_cnt12[0]                             ; Merged with i_cnt1[0]  ;
+; i_cnt23[0]                             ; Merged with i_cnt1[0]  ;
+; i_cnt74[0]                             ; Merged with i_cnt1[0]  ;
+; i_cnt82[0]                             ; Merged with i_cnt1[0]  ;
+; i_cnt89[0]                             ; Merged with i_cnt1[0]  ;
+; i_cnt122[0]                            ; Merged with i_cnt1[0]  ;
+; i_cnt94[0]                             ; Merged with i_cnt1[0]  ;
+; i_cnt84[1]                             ; Merged with i_cnt7[1]  ;
+; i_cnt94[1]                             ; Merged with i_cnt11[1] ;
+; i_cnt64[1]                             ; Merged with i_cnt11[1] ;
+; i_cnt107[1]                            ; Merged with i_cnt11[1] ;
+; i_cnt23[1]                             ; Merged with i_cnt12[1] ;
+; i_cnt39[1]                             ; Merged with i_cnt12[1] ;
+; i_cnt17[1]                             ; Merged with i_cnt12[1] ;
+; i_cnt40[1]                             ; Merged with i_cnt12[1] ;
+; i_cnt121[1]                            ; Merged with i_cnt19[1] ;
+; i_cnt76[1]                             ; Merged with i_cnt19[1] ;
+; i_cnt79[1]                             ; Merged with i_cnt19[1] ;
+; i_cnt118[1]                            ; Merged with i_cnt27[1] ;
+; i_cnt89[1]                             ; Merged with i_cnt27[1] ;
+; i_cnt49[1]                             ; Merged with i_cnt27[1] ;
+; i_cnt69[1]                             ; Merged with i_cnt41[1] ;
+; i_cnt90[1]                             ; Merged with i_cnt56[1] ;
+; i_cnt110[1]                            ; Merged with i_cnt63[1] ;
+; i_cnt81[1]                             ; Merged with i_cnt63[1] ;
+; i_cnt82[1]                             ; Merged with i_cnt63[1] ;
+; i_cnt12[1]                             ; Merged with i_cnt11[1] ;
+; i_cnt56[1]                             ; Merged with i_cnt27[1] ;
+; i_cnt63[1]                             ; Merged with i_cnt27[1] ;
+; i_cnt124[1]                            ; Merged with i_cnt41[1] ;
+; i_cnt82[2]                             ; Merged with i_cnt27[2] ;
+; i_cnt64[2]                             ; Merged with i_cnt12[2] ;
+; i_cnt90[2]                             ; Merged with i_cnt89[2] ;
+; i_cnt121[2]                            ; Merged with i_cnt79[2] ;
+; i_cnt41[1]                             ; Merged with i_cnt7[1]  ;
+; i_cnt89[2]                             ; Merged with i_cnt27[2] ;
+; i_cnt84[2]                             ; Merged with i_cnt69[2] ;
+; i_cnt11[1]                             ; Merged with i_cnt7[1]  ;
+; i_cnt12[2]                             ; Merged with i_cnt11[2] ;
+; i_cnt69[2]                             ; Merged with i_cnt7[2]  ;
+; Total Number of Removed Registers = 94 ;                        ;
++----------------------------------------+------------------------+
 
 
 +------------------------------------------------------+
@@ -324,7 +317,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 2083  ;
+; Total registers                              ; 2090  ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -349,151 +342,151 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 12.1 Build 177 11/07/2012 SJ Web Edition
-    Info: Processing started: Wed Jan 23 22:42:53 2019
+    Info: Processing started: Thu Jan 24 21:57:42 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off midi -c midi
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file midi.v
     Info (12023): Found entity 1: midi
 Info (12127): Elaborating entity "midi" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at midi.v(20): truncated value with size 32 to match size of target (8)
-Warning (10230): Verilog HDL assignment warning at midi.v(31): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(38): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(46): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(54): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(62): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(70): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(78): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(86): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(94): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(102): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(110): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(118): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(126): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(134): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(142): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(150): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(158): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(166): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(174): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(182): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(189): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(196): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(204): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(212): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(220): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(228): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(236): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(244): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(252): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(260): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(268): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(276): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(284): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(292): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(300): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(308): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(316): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(324): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(332): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(340): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(347): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(355): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(363): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(371): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(378): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(385): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(392): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(400): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(408): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(416): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(423): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(430): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(437): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(444): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(451): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(458): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(465): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(472): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(479): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(486): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(493): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(500): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(507): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(514): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(521): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(528): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(535): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(542): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(549): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(556): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(563): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(570): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(577): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(584): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(591): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(598): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(605): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(612): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(619): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(626): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(633): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(640): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(647): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(655): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(662): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(669): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(676): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(683): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(690): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(697): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(704): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(711): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(718): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(725): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(732): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(739): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(746): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(753): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(760): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(767): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(774): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(781): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(788): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(795): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(802): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(809): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(816): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(823): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(830): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(837): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(844): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(852): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(859): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(866): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(873): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(880): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(887): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(894): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(901): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(908): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(915): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(922): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(929): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(936): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(943): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(950): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(957): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(965): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at midi.v(970): truncated value with size 32 to match size of target (7)
+Warning (10230): Verilog HDL assignment warning at midi.v(21): truncated value with size 32 to match size of target (8)
+Warning (10230): Verilog HDL assignment warning at midi.v(32): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(39): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(47): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(55): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(63): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(71): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(79): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(87): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(95): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(103): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(111): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(119): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(127): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(135): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(143): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(151): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(159): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(167): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(175): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(183): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(190): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(197): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(205): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(213): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(221): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(229): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(237): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(245): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(253): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(261): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(269): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(277): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(285): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(293): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(301): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(309): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(317): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(325): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(333): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(341): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(348): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(356): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(364): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(372): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(379): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(386): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(393): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(401): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(409): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(417): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(424): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(431): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(438): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(445): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(452): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(459): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(466): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(473): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(480): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(487): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(494): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(501): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(508): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(515): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(522): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(529): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(536): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(543): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(550): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(557): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(564): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(571): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(578): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(585): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(592): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(599): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(606): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(613): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(620): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(627): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(634): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(641): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(648): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(656): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(663): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(670): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(677): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(684): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(691): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(698): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(705): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(712): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(719): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(726): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(733): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(740): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(747): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(754): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(761): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(768): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(775): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(782): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(789): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(796): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(803): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(810): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(817): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(824): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(831): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(838): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(845): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(853): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(860): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(867): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(874): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(881): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(888): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(895): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(902): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(909): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(916): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(923): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(930): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(937): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(944): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(951): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(958): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(966): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at midi.v(971): truncated value with size 32 to match size of target (7)
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 3852 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 3930 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 10 input pins
-    Info (21059): Implemented 1 output pins
-    Info (21061): Implemented 3841 logic cells
+    Info (21059): Implemented 2 output pins
+    Info (21061): Implemented 3918 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 130 warnings
-    Info: Peak virtual memory: 4631 megabytes
-    Info: Processing ended: Wed Jan 23 22:43:01 2019
+    Info: Peak virtual memory: 4633 megabytes
+    Info: Processing ended: Thu Jan 24 21:57:50 2019
     Info: Elapsed time: 00:00:08
     Info: Total CPU time (on all processors): 00:00:08
 

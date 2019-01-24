@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EPCS4) Path("C:/Users/t2kyo/Desktop/midi_interrupter/Cyclone_II_EP2C5T144E/output_files/") File("midi.pof") MfrSpec(OpMask(1) Child_OpMask(1 1));
+		Device PartName(EPCS4) Path("C:/Users/t2kyo/Desktop/midi/output_files/") File("midi.pof") MfrSpec(OpMask(1) Child_OpMask(1 1));
 
 ChainEnd;
 
