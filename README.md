@@ -12,5 +12,4 @@ Note Number : 0~128
 Output Pulse Whidth : about 20uS inverted
 
 Development environment : Quartus II 12.1 Web Edition (64-Bit)
-
                         : Mbed Online Compiler
