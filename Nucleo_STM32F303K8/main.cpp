@@ -17,6 +17,16 @@ int main()
             if(d1 >= 128 && d1 <= 159 ){
                 d2 = midi.getc();
                 d3 = midi.getc();
+            }else if(d1 >= 176 && d1 <= 191){
+                d2 = midi.getc();
+            if(d2 == 120 || d2 == 121 || d2 == 123){
+                    for (int i=0; i <= 127; i++){
+                    note = i;
+                    enb = 0;
+                    wri = 1;
+                    wri = 0;
+                    }
+            }
             }else{
                 goto reget;
                 }
@@ -37,6 +47,6 @@ int main()
                     enb = 0;
                     wri = 1;
                     wri = 0;
-            }                
+            }
     }
 }
